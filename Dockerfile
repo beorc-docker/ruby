@@ -23,13 +23,3 @@ RUN apt-get update \
   && apt-get purge -y --auto-remove bison libgdbm-dev ruby \
   && gem update --system $RUBYGEMS_VERSION \
   && rm -r /usr/src/ruby
-
-# install things globally, for great justice
-ENV GEM_HOME /usr/local/bundle
-ENV PATH $GEM_HOME/bin:$PATH
-
-ENV BUNDLER_VERSION 1.10.6
-
-RUN gem install bundler --version "$BUNDLER_VERSION"
-
-ENV BUNDLE_APP_CONFIG $GEM_HOME
