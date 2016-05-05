@@ -1,4 +1,4 @@
-FROM buildpack-deps:trusty
+FROM buildpack-deps:xenial
 
 ENV RUBY_MAJOR 2.2
 ENV RUBY_VERSION 2.2.4
