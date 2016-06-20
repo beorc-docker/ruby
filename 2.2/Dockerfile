@@ -1,9 +1,9 @@
 FROM buildpack-deps:xenial
 
 ENV RUBY_MAJOR 2.2
-ENV RUBY_VERSION 2.2.4
-ENV RUBY_DOWNLOAD_SHA256 b6eff568b48e0fda76e5a36333175df049b204e91217aa32a65153cc0cdcb761
-ENV RUBYGEMS_VERSION 2.5.1
+ENV RUBY_VERSION 2.2.5
+ENV RUBY_DOWNLOAD_SHA256 30c4b31697a4ca4ea0c8db8ad30cf45e6690a0f09687e5d483c933c03ca335e3
+ENV RUBYGEMS_VERSION 2.6.4
 
 # some of ruby's build scripts are written in ruby
 # we purge this later to make sure our final image uses what we just built
